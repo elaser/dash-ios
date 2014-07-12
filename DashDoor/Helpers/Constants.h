@@ -14,6 +14,8 @@ extern NSString *const kDAShBackendBaseURL;
 
 extern NSString *const kDEFaultsAccessToken;
 
+extern NSString *const kFICRegularPictureName;
+
 #define UIColorFromHex(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:1.0]
 
 @end

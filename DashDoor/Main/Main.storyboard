@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="-226" y="473"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Menu Table View Controller-->
         <scene sceneID="Uzu-Am-zYx">
             <objects>
-                <tableViewController storyboardIdentifier="menu_vc" id="S50-vw-vIJ" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="menu_vc" id="S50-vw-vIJ" customClass="MenuTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QpU-HN-uny">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,33 +178,82 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8q-1E-9v0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502" y="467"/>
+            <point key="canvasLocation" x="546" y="692"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="8Js-lc-5Ae">
             <objects>
                 <viewController id="f6C-Px-ARe" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="S1n-hQ-Sjm"/>
-                        <viewControllerLayoutGuide type="bottom" id="csh-aN-EsV"/>
+                        <viewControllerLayoutGuide type="top" id="zQX-jx-dlO"/>
+                        <viewControllerLayoutGuide type="bottom" id="i5D-Ru-ei5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AkT-yb-CTU">
+                    <view key="view" contentMode="scaleToFill" id="45P-QH-M0C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView appearanceType="aqua" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fjD-vn-NHQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell appearanceType="aqua" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="qUG-gd-OpP" customClass="RestaurantTableViewCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qUG-gd-OpP" id="hKn-5c-5px">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iw3-tm-bz1">
+                                                    <rect key="frame" x="10" y="5" width="66" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzC-QN-ioe">
+                                                    <rect key="frame" x="83" y="5" width="217" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJY-XI-L9d">
+                                                    <rect key="frame" x="83" y="23" width="217" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7X-Ei-5ZR">
+                                                    <rect key="frame" x="191" y="40" width="118" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="restaurantCategoryLabel" destination="RJY-XI-L9d" id="tsv-PW-TQS"/>
+                                            <outlet property="restaurantImageView" destination="Iw3-tm-bz1" id="BsK-9t-I8K"/>
+                                            <outlet property="restaurantNameLabel" destination="GzC-QN-ioe" id="PKt-xd-NDl"/>
+                                            <outlet property="restaurantStatusLabel" destination="c7X-Ei-5ZR" id="obO-PS-B4v"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="NFt-Zr-u1k">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="qVj-AT-XVM">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="WbA-Te-5jk">
                             <connections>
-                                <segue destination="3nN-kd-3ZX" kind="unwind" unwindAction="unwindToMenuViewController:" id="aj5-xt-U8T"/>
+                                <segue destination="U28-QA-5ud" kind="unwind" unwindAction="unwindToMenuSegue:" id="9Zs-Rz-GXn"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="eDC-KI-3h6"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJe-e0-EtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="3nN-kd-3ZX" userLabel="Exit" sceneMemberID="exit"/>
+                <exit id="U28-QA-5ud" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="936" y="467"/>
+            <point key="canvasLocation" x="922" y="692"/>
         </scene>
     </scenes>
     <resources>

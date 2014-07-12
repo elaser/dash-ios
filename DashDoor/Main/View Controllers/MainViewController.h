@@ -11,3 +11,13 @@
 @interface MainViewController : UIViewController
 
 @end
+
+
+@interface RestaurantTableViewCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UIImageView *restaurantImageView;
+@property (weak, nonatomic) IBOutlet UILabel *restaurantNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *restaurantCategoryLabel;
+@property (weak, nonatomic) IBOutlet UILabel *restaurantStatusLabel;
+
+@end

@@ -14,3 +14,4 @@
 
 NSString *const kDAShBackendBaseURL = @"https://www.doordash.com/api";
 NSString *const kDEFaultsAccessToken = @"access-token";
+NSString *const kFICRegularPictureName = @"regular-picture";

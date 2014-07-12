@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E011009196E84750038D2DC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E011008196E84750038D2DC /* HomeViewController.m */; };
+		0E0983291970E61800796E34 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0983281970E61800796E34 /* MenuTableViewController.m */; };
 		0E655401196F00D1006FD2A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E655400196F00D1006FD2A1 /* MainViewController.m */; };
 		0E683B17196E6ADA00255BC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E683B16196E6ADA00255BC5 /* Foundation.framework */; };
 		0E683B19196E6ADA00255BC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E683B18196E6ADA00255BC5 /* CoreGraphics.framework */; };
@@ -28,6 +29,7 @@
 		0E683B53196E810600255BC5 /* dashdoor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E683B52196E810600255BC5 /* dashdoor.png */; };
 		0E7CC1E91970CE3300E7F42D /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CC1E81970CE3300E7F42D /* Constants.m */; };
 		0E7DCABB1970CD3800CB7774 /* RESTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DCABA1970CD3800CB7774 /* RESTHelper.m */; };
+		0EBC979919710E6B00CBD970 /* FICHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC979819710E6B00CBD970 /* FICHelper.m */; };
 		0EE990EC196E857400B30840 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE990EB196E857400B30840 /* SignInViewController.m */; };
 		FBADEA59B495440B85D31401 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5368707DD2BD4B778CB3551E /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		0E011007196E84750038D2DC /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = "Main/View Controllers/HomeViewController.h"; sourceTree = "<group>"; };
 		0E011008196E84750038D2DC /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = "Main/View Controllers/HomeViewController.m"; sourceTree = "<group>"; };
+		0E0983271970E61800796E34 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuTableViewController.h; path = "Main/View Controllers/MenuTableViewController.h"; sourceTree = "<group>"; };
+		0E0983281970E61800796E34 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTableViewController.m; path = "Main/View Controllers/MenuTableViewController.m"; sourceTree = "<group>"; };
 		0E6553FF196F00D1006FD2A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "Main/View Controllers/MainViewController.h"; sourceTree = "<group>"; };
 		0E655400196F00D1006FD2A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "Main/View Controllers/MainViewController.m"; sourceTree = "<group>"; };
 		0E683B13196E6ADA00255BC5 /* DashDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +75,8 @@
 		0E7CC1E81970CE3300E7F42D /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Helpers/Constants.m; sourceTree = "<group>"; };
 		0E7DCAB91970CD3800CB7774 /* RESTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RESTHelper.h; path = Helpers/RESTHelper.h; sourceTree = "<group>"; };
 		0E7DCABA1970CD3800CB7774 /* RESTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RESTHelper.m; path = Helpers/RESTHelper.m; sourceTree = "<group>"; };
+		0EBC979719710E6B00CBD970 /* FICHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FICHelper.h; path = Helpers/FICHelper.h; sourceTree = "<group>"; };
+		0EBC979819710E6B00CBD970 /* FICHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FICHelper.m; path = Helpers/FICHelper.m; sourceTree = "<group>"; };
 		0EE990EA196E857400B30840 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = "Main/View Controllers/SignInViewController.h"; sourceTree = "<group>"; };
 		0EE990EB196E857400B30840 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = "Main/View Controllers/SignInViewController.m"; sourceTree = "<group>"; };
 		5368707DD2BD4B778CB3551E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +119,8 @@
 				0EE990EB196E857400B30840 /* SignInViewController.m */,
 				0E6553FF196F00D1006FD2A1 /* MainViewController.h */,
 				0E655400196F00D1006FD2A1 /* MainViewController.m */,
+				0E0983271970E61800796E34 /* MenuTableViewController.h */,
+				0E0983281970E61800796E34 /* MenuTableViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -124,6 +132,8 @@
 				0E7DCABA1970CD3800CB7774 /* RESTHelper.m */,
 				0E7CC1E71970CE3300E7F42D /* Constants.h */,
 				0E7CC1E81970CE3300E7F42D /* Constants.m */,
+				0EBC979719710E6B00CBD970 /* FICHelper.h */,
+				0EBC979819710E6B00CBD970 /* FICHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -354,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBC979919710E6B00CBD970 /* FICHelper.m in Sources */,
 				0EE990EC196E857400B30840 /* SignInViewController.m in Sources */,
 				0E655401196F00D1006FD2A1 /* MainViewController.m in Sources */,
 				0E683B29196E6ADA00255BC5 /* AppDelegate.m in Sources */,
@@ -361,6 +372,7 @@
 				0E683B25196E6ADA00255BC5 /* main.m in Sources */,
 				0E7DCABB1970CD3800CB7774 /* RESTHelper.m in Sources */,
 				0E683B2C196E6ADA00255BC5 /* DashDoor.xcdatamodeld in Sources */,
+				0E0983291970E61800796E34 /* MenuTableViewController.m in Sources */,
 				0E011009196E84750038D2DC /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

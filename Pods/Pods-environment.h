@@ -54,6 +54,12 @@
 #define COCOAPODS_VERSION_MINOR_ECSlidingViewController 0
 #define COCOAPODS_VERSION_PATCH_ECSlidingViewController 2
 
+// FastImageCache
+#define COCOAPODS_POD_AVAILABLE_FastImageCache
+#define COCOAPODS_VERSION_MAJOR_FastImageCache 1
+#define COCOAPODS_VERSION_MINOR_FastImageCache 3
+#define COCOAPODS_VERSION_PATCH_FastImageCache 0
+
 // SVProgressHUD
 #define COCOAPODS_POD_AVAILABLE_SVProgressHUD
 #define COCOAPODS_VERSION_MAJOR_SVProgressHUD 1

@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 #import "Constants.h"
 
-@interface MainViewController ()
+@interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -48,8 +48,9 @@
 }
 */
 
-- (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)segue {
-}
+@end
+
+@implementation RestaurantTableViewCell
 
 
 @end
