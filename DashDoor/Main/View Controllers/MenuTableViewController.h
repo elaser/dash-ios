@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AMSlideMenu/AMSlideMenuLeftTableViewController.h>
 
-@interface MenuTableViewController : UITableViewController
-
-- (IBAction)unwindToMenuSegue:(UIStoryboardSegue *)segue;
+@interface MenuTableViewController : AMSlideMenuLeftTableViewController
 
 @end

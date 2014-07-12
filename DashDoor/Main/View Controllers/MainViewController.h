@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AMSlideMenu/AMSlideMenuMainViewController.h>
 
 @interface MainViewController : UIViewController
 

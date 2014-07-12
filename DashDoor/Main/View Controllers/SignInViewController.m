@@ -7,7 +7,6 @@
 //
 
 #import "SignInViewController.h"
-#import <ECSlidingViewController/ECSlidingViewController.h>
 #import "RESTHelper.h"
 #import "Constants.h"
 #import <SVProgressHUD/SVProgressHUD.h>
@@ -97,7 +96,7 @@
 
 #pragma mark - Attempt to segue to actual content
 - (void) goToMainScreen {
-    ECSlidingViewController *slidingVC = (ECSlidingViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"slide_vc"];
+    UIViewController *slidingVC = [self.storyboard instantiateViewControllerWithIdentifier:@"slide_vc"];
     [self presentViewController:slidingVC animated:YES completion:nil];
 }
 

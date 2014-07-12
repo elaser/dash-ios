@@ -8,7 +8,19 @@
 
 #import "MenuTableViewController.h"
 
+typedef enum {
+    MENU_RESTAURANTS,
+    MENU_ACCOUNT,
+    MENU_SUPPORT,
+    MENU_DRIVER,
+    MENU_LOGOUT,
+    NUM_OF_MENU_OPTIONS
+}MENU_OPTIONS;
+
 @interface MenuTableViewController ()
+
+@property NSArray *menuOptionArray;
+@property NSArray *segueArray;
 
 @end
 
@@ -32,6 +44,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.menuOptionArray = @[@"Restaurants", @"Account", @"Support", @"Become a Driver", @"Logout"];
+    self.segueArray = @[@"firstRow", @"secondRow", @"thirdRow", @"fourthRow", @"fifthRow"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,32 +58,31 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return NUM_OF_MENU_OPTIONS;
 }
 
-- (IBAction)unwindToMenuSegue:(UIStoryboardSegue *)segue {
-    
-}
-
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"menu_cell"];
+    UILabel *menuOptionLabel = (UILabel *)[cell viewWithTag:1];
+    menuOptionLabel.text = self.menuOptionArray[indexPath.row];
     
     // Configure the cell...
     
     return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self performSegueWithIdentifier:self.segueArray[indexPath.row] sender:self];
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -119,5 +132,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 @end

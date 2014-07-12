@@ -11,7 +11,6 @@
 #import  <FastImageCache/FICImageCache.h>
 #import  "RESTHelper.h"
 #import "Restaurant.h"
-#import <ECSlidingViewController/ECSlidingViewController.h>
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -38,8 +37,6 @@
     self.navigationController.navigationBar.barTintColor = UIColorFromHex(0xD6494A);
     [self refreshRestaurantList];
     
-    ECSlidingViewController *slidingVC = (ECSlidingViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"slide_vc"];
-    [self.navigationController.view addGestureRecognizer:slidingVC.panGesture];
 }
 
 - (void)didReceiveMemoryWarning
@@ -95,6 +92,8 @@
         [_restaurantTableView reloadData];
     } failure:nil];
 }
+
+
 
 
 @end

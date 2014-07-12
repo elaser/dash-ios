@@ -20,6 +20,7 @@
 {
     [FICHelper sharedInstance];
     [[LocationHandler sharedInstance] refreshLocation];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
 }
 
