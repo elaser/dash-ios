@@ -11,6 +11,7 @@
 #import  <FastImageCache/FICImageCache.h>
 #import  "RESTHelper.h"
 #import "Restaurant.h"
+#import <ECSlidingViewController/ECSlidingViewController.h>
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -36,6 +37,9 @@
     self.restaurantArray = [NSMutableArray array];
     self.navigationController.navigationBar.barTintColor = UIColorFromHex(0xD6494A);
     [self refreshRestaurantList];
+    
+    ECSlidingViewController *slidingVC = (ECSlidingViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"slide_vc"];
+    [self.navigationController.view addGestureRecognizer:slidingVC.panGesture];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,9 +69,14 @@
     Restaurant *resto = [_restaurantArray objectAtIndex:indexPath.row];
     if (cell) {
         if (resto.cover_image_url)
-            [[FICImageCache sharedImageCache] retrieveImageForEntity:resto withFormatName:kFICRegularPictureName completionBlock:^(id<FICEntity> entity, NSString *formatName, UIImage *image) {
-                cell.restaurantImageView.image = image;
-            }];
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [[FICImageCache sharedImageCache] retrieveImageForEntity:resto withFormatName:kFICRegularPictureName completionBlock:^(id<FICEntity> entity, NSString *formatName, UIImage *image) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        cell.restaurantImageView.image = image;
+                    });
+                }];
+            });
+        
         
         cell.restaurantNameLabel.text = resto.name;
         cell.restaurantCategoryLabel.text = resto.restaurant_description;

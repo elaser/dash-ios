@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "999CE7121C45445A8ADAC670"
+               BlueprintIdentifier = "B2795EE736024914AECDA00B"
                BuildableName = "libPods-FastImageCache.a"
                BlueprintName = "Pods-FastImageCache"
                ReferencedContainer = "container:Pods.xcodeproj">

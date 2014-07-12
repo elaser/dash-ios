@@ -38,7 +38,7 @@ static RESTHelper *_sharedInstance;
 
 - (void) authenticateUserWithEmail:(NSString *)email withPassword:(NSString *)password success:(void (^)(NSString *token))success failure:(void (^)())failure {
     
-    NSString *authURL = [NSString stringWithFormat:@"%@/auth-token/", kDAShBackendBaseURL];
+    NSString *authURL = [NSString stringWithFormat:@"%@/auth-token/", kDAShSecureBackendBaseURL];
     NSDictionary *loginDictionary = @{@"email": email, @"password":password};
     [_sharedInstance.manager POST:authURL parameters:loginDictionary success:^(AFHTTPRequestOperation *operation, id responseObject) {
         _sharedInstance.authenticationToken = responseObject[@"token"];
@@ -51,7 +51,7 @@ static RESTHelper *_sharedInstance;
 }
 
 - (void) obtainRestaurantsWithSuccess:(void (^)(NSArray * restaurantArray))success failure:(void (^)())failure {
-    NSString *restaurantQueryString = [NSString stringWithFormat:@"%@/restaurant/",kDAShBackendBaseURL];
+    NSString *restaurantQueryString = [NSString stringWithFormat:@"%@/restaurant/",kDAShUnsecureBackendBaseURL];
     [_sharedInstance.manager GET:restaurantQueryString parameters:[[LocationHandler sharedInstance] obtainLocation] success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSMutableArray *restaurantArray = [NSMutableArray array];
         NSArray *dataArray = (NSArray *) responseObject;

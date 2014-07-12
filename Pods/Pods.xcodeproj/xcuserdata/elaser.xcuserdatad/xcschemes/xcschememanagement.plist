@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ECSlidingViewController.xcscheme</key>
+		<key>Pods-AMSlideMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>201D9718EE974750A4718DF9</key>
+		<key>23412829CAD64A95B49A45E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74AA37044A334C4C846C1F58</key>
+		<key>B2795EE736024914AECDA00B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>999CE7121C45445A8ADAC670</key>
+		<key>D59ECAF9DBB5415E9CA8F329</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C7A0ED0EB27140E780BDD839</key>
+		<key>DEDDA0990B88488BA21C9C7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E147912A288F40949A9B85EF</key>
+		<key>FF9117D40A324C81A3459B4E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

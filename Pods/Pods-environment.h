@@ -48,11 +48,11 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 3
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 1
 
-// ECSlidingViewController
-#define COCOAPODS_POD_AVAILABLE_ECSlidingViewController
-#define COCOAPODS_VERSION_MAJOR_ECSlidingViewController 2
-#define COCOAPODS_VERSION_MINOR_ECSlidingViewController 0
-#define COCOAPODS_VERSION_PATCH_ECSlidingViewController 2
+// AMSlideMenu
+#define COCOAPODS_POD_AVAILABLE_AMSlideMenu
+#define COCOAPODS_VERSION_MAJOR_AMSlideMenu 1
+#define COCOAPODS_VERSION_MINOR_AMSlideMenu 5
+#define COCOAPODS_VERSION_PATCH_AMSlideMenu 3
 
 // FastImageCache
 #define COCOAPODS_POD_AVAILABLE_FastImageCache

@@ -10,7 +10,8 @@
 
 @interface Constants : NSObject
 
-extern NSString *const kDAShBackendBaseURL;
+extern NSString *const kDAShSecureBackendBaseURL;
+extern NSString *const kDAShUnsecureBackendBaseURL;
 
 extern NSString *const kDEFaultsAccessToken;
 

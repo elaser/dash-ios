@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgk-XJ-1xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-226" y="473"/>
+            <point key="canvasLocation" x="-236" y="692"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="Uzu-Am-zYx">
@@ -162,7 +162,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1N-C0-9IE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="473"/>
+            <point key="canvasLocation" x="130" y="692"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lwg-PW-jSq">
@@ -171,6 +171,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HIj-pK-baP">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.83921568629999999" green="0.28627450980000002" blue="0.2901960784" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="f6C-Px-ARe" kind="relationship" relationship="rootViewController" id="NfH-Fv-DHb"/>
