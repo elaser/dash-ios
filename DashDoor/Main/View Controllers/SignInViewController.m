@@ -35,9 +35,7 @@
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:kDEFaultsAccessToken]) {
-        [self goToMainScreen];
-    }
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {

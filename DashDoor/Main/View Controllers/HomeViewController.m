@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "Constants.h"
 
 @interface HomeViewController ()
 
@@ -32,6 +33,13 @@
     self.navigationController.navigationBar.translucent = YES;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:kDEFaultsAccessToken]) {
+        [self goToMainScreen];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -48,5 +56,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Attempt to segue to actual content
+- (void) goToMainScreen {
+    UIViewController *slidingVC = [self.storyboard instantiateViewControllerWithIdentifier:@"slide_vc"];
+    [self presentViewController:slidingVC animated:YES completion:nil];
+}
 
 @end
