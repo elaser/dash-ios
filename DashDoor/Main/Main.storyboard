@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WsM-CV-bJv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wiD-Rc-UNg">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="WsM-CV-bJv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eHu-Fp-Q9k">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WVP-tU-67B" kind="relationship" relationship="rootViewController" id="qWY-jD-gQZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yde-0M-pkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="-210"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="LSu-cW-WNs">
+            <objects>
+                <viewController id="WVP-tU-67B" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Ew-Zw-6HC"/>
+                        <viewControllerLayoutGuide type="bottom" id="L6r-qc-M4n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fcP-z6-ssD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dashdoor.png" translatesAutoresizingMaskIntoConstraints="NO" id="CDx-b0-qHH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3g-2U-wMW">
+                                <rect key="frame" x="10" y="472" width="300" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83921568627450982" green="0.28627450980392155" blue="0.29019607843137257" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="o57-rn-7NP" kind="push" id="xMA-Nx-FbO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Ob-Ja-3Dz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFF-ln-Wgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="-210"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="aTj-Rm-upc">
+            <objects>
+                <viewController id="o57-rn-7NP" customClass="SignInViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Oo-I5-Lfx"/>
+                        <viewControllerLayoutGuide type="bottom" id="gH8-SA-jY6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ni3-aN-cDN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5SP-yA-Evx">
+                                <rect key="frame" x="20" y="95" width="280" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="o57-rn-7NP" id="QfR-nJ-8LZ"/>
+                                </connections>
+                            </textField>
+                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qC9-Py-jSa">
+                                <rect key="frame" x="20" y="145" width="280" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="o57-rn-7NP" id="STG-ke-0ey"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5t7-gE-CVk"/>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="5SP-yA-Evx" id="LvP-xF-Oh7"/>
+                        <outlet property="passwordTextField" destination="qC9-Py-jSa" id="atS-Tr-2lr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzO-k0-Pej" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="-210"/>
+        </scene>
+        <!--Sliding View Controller-->
+        <scene sceneID="TYD-GV-Bc9">
+            <objects>
+                <viewController storyboardIdentifier="slide_vc" id="Hif-iw-4TW" customClass="ECSlidingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J4f-Xo-DzC"/>
+                        <viewControllerLayoutGuide type="bottom" id="vhZ-ah-1zn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IiB-Fb-p2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="topViewControllerStoryboardId" value="main_nav"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="underLeftViewControllerStoryboardId" value="menu_vc"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xgk-XJ-1xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="473"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Uzu-Am-zYx">
+            <objects>
+                <tableViewController storyboardIdentifier="menu_vc" id="S50-vw-vIJ" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QpU-HN-uny">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="PDc-pZ-Nbn">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PDc-pZ-Nbn" id="dpU-8F-JKF">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXF-0A-OfM">
+                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Ysf-sX-GU2" kind="custom" customClass="ECSlidingSegue" id="7wB-ND-4hj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="S50-vw-vIJ" id="oBZ-qs-nom"/>
+                            <outlet property="delegate" destination="S50-vw-vIJ" id="QBX-Cd-XUA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1N-C0-9IE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="473"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lwg-PW-jSq">
+            <objects>
+                <navigationController storyboardIdentifier="main_nav" definesPresentationContext="YES" id="Ysf-sX-GU2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HIj-pK-baP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.83921568629999999" green="0.28627450980000002" blue="0.2901960784" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="f6C-Px-ARe" kind="relationship" relationship="rootViewController" id="NfH-Fv-DHb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8q-1E-9v0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502" y="467"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="8Js-lc-5Ae">
+            <objects>
+                <viewController id="f6C-Px-ARe" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S1n-hQ-Sjm"/>
+                        <viewControllerLayoutGuide type="bottom" id="csh-aN-EsV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AkT-yb-CTU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NFt-Zr-u1k">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="qVj-AT-XVM">
+                            <connections>
+                                <segue destination="3nN-kd-3ZX" kind="unwind" unwindAction="unwindToMenuViewController:" id="aj5-xt-U8T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MJe-e0-EtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3nN-kd-3ZX" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="467"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dashdoor.png" width="640" height="1136"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
