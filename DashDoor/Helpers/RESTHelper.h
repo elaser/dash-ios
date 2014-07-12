@@ -13,5 +13,6 @@
 + (RESTHelper *) sharedInstance;
 
 - (void) authenticateUserWithEmail:(NSString *)email withPassword:(NSString *)password success:(void (^)(NSString *token))success failure:(void (^)())failure;
+- (void) obtainRestaurantsWithSuccess:(void (^)(NSArray * restaurantArray))success failure:(void (^)())failure;
 
 @end

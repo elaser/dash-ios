@@ -8,8 +8,13 @@
 
 #import "MainViewController.h"
 #import "Constants.h"
+#import  <FastImageCache/FICImageCache.h>
+#import  "RESTHelper.h"
+#import "Restaurant.h"
 
 @interface MainViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property NSMutableArray *restaurantArray;
 
 @end
 
@@ -28,7 +33,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.restaurantArray = [NSMutableArray array];
     self.navigationController.navigationBar.barTintColor = UIColorFromHex(0xD6494A);
+    [self refreshRestaurantList];
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,6 +54,39 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UITableViewDataSource and UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _restaurantArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    RestaurantTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"restaurant_cell"];
+    Restaurant *resto = [_restaurantArray objectAtIndex:indexPath.row];
+    if (cell) {
+        if (resto.cover_image_url)
+            [[FICImageCache sharedImageCache] retrieveImageForEntity:resto withFormatName:kFICRegularPictureName completionBlock:^(id<FICEntity> entity, NSString *formatName, UIImage *image) {
+                cell.restaurantImageView.image = image;
+            }];
+        
+        cell.restaurantNameLabel.text = resto.name;
+        cell.restaurantCategoryLabel.text = resto.restaurant_description;
+        cell.restaurantStatusLabel.text = resto.status.intValue > 0 ? @"Order" : @"Pre-order";
+    }
+    
+    return cell;
+}
+
+/*
+ * refreshRestaurantList - We make the call to the backend to obtain the restaurants
+ */
+- (void) refreshRestaurantList {
+    [[RESTHelper sharedInstance] obtainRestaurantsWithSuccess:^(NSArray *restaurantArray) {
+        _restaurantArray = [NSMutableArray arrayWithArray:restaurantArray];
+        [_restaurantTableView reloadData];
+    } failure:nil];
+}
+
 
 @end
 

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "FICHelper.h"
+#import "LocationHandler.h"
 
 @implementation AppDelegate
 
@@ -16,8 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [FICHelper sharedInstance];
+    [[LocationHandler sharedInstance] refreshLocation];
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
