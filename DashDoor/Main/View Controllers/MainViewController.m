@@ -33,9 +33,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"DashDoor";
     self.restaurantArray = [NSMutableArray array];
     self.navigationController.navigationBar.barTintColor = UIColorFromHex(0xD6494A);
     [self refreshRestaurantList];
+    
     
 }
 

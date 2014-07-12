@@ -47,6 +47,16 @@
 */
 
 #pragma mark - Override methods
+- (void)configureLeftMenuButton:(UIButton *)button
+{
+    CGRect frame = button.frame;
+    frame = CGRectMake(0, 0, 25, 13);
+    button.frame = frame;
+    button.backgroundColor = [UIColor clearColor];
+    [button setImage:[UIImage imageNamed:@"simpleMenuButton"] forState:UIControlStateNormal];
+}
+
+
 - (NSString *)segueIdentifierForIndexPathInLeftMenu:(NSIndexPath *)indexPath
 {
     NSString *identifier = @"";

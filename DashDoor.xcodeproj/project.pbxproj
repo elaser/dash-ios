@@ -13,6 +13,11 @@
 		0E0203601971194B000C7373 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E02035F1971194B000C7373 /* Restaurant.m */; };
 		0E0983291970E61800796E34 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0983281970E61800796E34 /* MenuTableViewController.m */; };
 		0E14E0D31971D2D6007DA0E3 /* MainSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14E0D21971D2D6007DA0E3 /* MainSliderViewController.m */; };
+		0E29C2521971E83E00A0E935 /* DriverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E29C2511971E83E00A0E935 /* DriverViewController.m */; };
+		0E29C2551971EAB400A0E935 /* SupportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E29C2541971EAB400A0E935 /* SupportViewController.m */; };
+		0E29C2591971EFD800A0E935 /* DashNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E29C2581971EFD800A0E935 /* DashNavigationBar.m */; };
+		0E29C25C1971F35B00A0E935 /* simpleMenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E29C25A1971F35B00A0E935 /* simpleMenuButton.png */; };
+		0E29C25D1971F35B00A0E935 /* simpleMenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E29C25B1971F35B00A0E935 /* simpleMenuButton@2x.png */; };
 		0E655401196F00D1006FD2A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E655400196F00D1006FD2A1 /* MainViewController.m */; };
 		0E683B17196E6ADA00255BC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E683B16196E6ADA00255BC5 /* Foundation.framework */; };
 		0E683B19196E6ADA00255BC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E683B18196E6ADA00255BC5 /* CoreGraphics.framework */; };
@@ -60,6 +65,14 @@
 		0E0983281970E61800796E34 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTableViewController.m; path = "Main/View Controllers/MenuTableViewController.m"; sourceTree = "<group>"; };
 		0E14E0D11971D2D6007DA0E3 /* MainSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainSliderViewController.h; path = "Main/View Controllers/MainSliderViewController.h"; sourceTree = "<group>"; };
 		0E14E0D21971D2D6007DA0E3 /* MainSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainSliderViewController.m; path = "Main/View Controllers/MainSliderViewController.m"; sourceTree = "<group>"; };
+		0E29C2501971E83E00A0E935 /* DriverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DriverViewController.h; path = "Main/View Controllers/DriverViewController.h"; sourceTree = "<group>"; };
+		0E29C2511971E83E00A0E935 /* DriverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DriverViewController.m; path = "Main/View Controllers/DriverViewController.m"; sourceTree = "<group>"; };
+		0E29C2531971EAB400A0E935 /* SupportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SupportViewController.h; path = "Main/View Controllers/SupportViewController.h"; sourceTree = "<group>"; };
+		0E29C2541971EAB400A0E935 /* SupportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SupportViewController.m; path = "Main/View Controllers/SupportViewController.m"; sourceTree = "<group>"; };
+		0E29C2571971EFD800A0E935 /* DashNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DashNavigationBar.h; path = "Main/Navigation Bar/DashNavigationBar.h"; sourceTree = "<group>"; };
+		0E29C2581971EFD800A0E935 /* DashNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DashNavigationBar.m; path = "Main/Navigation Bar/DashNavigationBar.m"; sourceTree = "<group>"; };
+		0E29C25A1971F35B00A0E935 /* simpleMenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simpleMenuButton.png; sourceTree = "<group>"; };
+		0E29C25B1971F35B00A0E935 /* simpleMenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "simpleMenuButton@2x.png"; sourceTree = "<group>"; };
 		0E6553FF196F00D1006FD2A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "Main/View Controllers/MainViewController.h"; sourceTree = "<group>"; };
 		0E655400196F00D1006FD2A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "Main/View Controllers/MainViewController.m"; sourceTree = "<group>"; };
 		0E683B13196E6ADA00255BC5 /* DashDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,8 +148,21 @@
 				0E0983281970E61800796E34 /* MenuTableViewController.m */,
 				0E14E0D11971D2D6007DA0E3 /* MainSliderViewController.h */,
 				0E14E0D21971D2D6007DA0E3 /* MainSliderViewController.m */,
+				0E29C2501971E83E00A0E935 /* DriverViewController.h */,
+				0E29C2511971E83E00A0E935 /* DriverViewController.m */,
+				0E29C2531971EAB400A0E935 /* SupportViewController.h */,
+				0E29C2541971EAB400A0E935 /* SupportViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0E29C2561971EFBD00A0E935 /* Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				0E29C2571971EFD800A0E935 /* DashNavigationBar.h */,
+				0E29C2581971EFD800A0E935 /* DashNavigationBar.m */,
+			);
+			name = "Navigation Bar";
 			sourceTree = "<group>";
 		};
 		0E655402196F0163006FD2A1 /* Helpers */ = {
@@ -236,6 +262,7 @@
 		0E683B4B196E6AE800255BC5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0E29C2561971EFBD00A0E935 /* Navigation Bar */,
 				0E011006196E845B0038D2DC /* View Controllers */,
 				0E683B4E196E6B0D00255BC5 /* Main.storyboard */,
 			);
@@ -245,6 +272,8 @@
 		0E683B51196E810600255BC5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0E29C25A1971F35B00A0E935 /* simpleMenuButton.png */,
+				0E29C25B1971F35B00A0E935 /* simpleMenuButton@2x.png */,
 				0E683B52196E810600255BC5 /* dashdoor.png */,
 			);
 			path = Images;
@@ -336,6 +365,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E29C25C1971F35B00A0E935 /* simpleMenuButton.png in Resources */,
+				0E29C25D1971F35B00A0E935 /* simpleMenuButton@2x.png in Resources */,
 				0E683B4F196E6B0D00255BC5 /* Main.storyboard in Resources */,
 				0E683B23196E6ADA00255BC5 /* InfoPlist.strings in Resources */,
 				0E683B2E196E6ADA00255BC5 /* Images.xcassets in Resources */,
@@ -391,7 +422,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E29C2521971E83E00A0E935 /* DriverViewController.m in Sources */,
+				0E29C2551971EAB400A0E935 /* SupportViewController.m in Sources */,
 				0EBC979919710E6B00CBD970 /* FICHelper.m in Sources */,
+				0E29C2591971EFD800A0E935 /* DashNavigationBar.m in Sources */,
 				0EE990EC196E857400B30840 /* SignInViewController.m in Sources */,
 				0E655401196F00D1006FD2A1 /* MainViewController.m in Sources */,
 				0E683B29196E6ADA00255BC5 /* AppDelegate.m in Sources */,

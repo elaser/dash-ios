@@ -12,6 +12,8 @@
 
 extern NSString *const kDAShSecureBackendBaseURL;
 extern NSString *const kDAShUnsecureBackendBaseURL;
+extern NSString *const kDAShDriverURL;
+extern NSString *const kDAShSupportURL;
 
 extern NSString *const kDEFaultsAccessToken;
 

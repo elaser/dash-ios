@@ -10,7 +10,6 @@
 
 typedef enum {
     MENU_RESTAURANTS,
-    MENU_ACCOUNT,
     MENU_SUPPORT,
     MENU_DRIVER,
     MENU_LOGOUT,
@@ -44,8 +43,8 @@ typedef enum {
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.menuOptionArray = @[@"Restaurants", @"Account", @"Support", @"Become a Driver", @"Logout"];
-    self.segueArray = @[@"firstRow", @"secondRow", @"thirdRow", @"fourthRow", @"fifthRow"];
+    self.menuOptionArray = @[@"Restaurants", @"Support", @"Become a Driver", @"Logout"];
+    self.segueArray = @[@"firstRow", @"secondRow", @"thirdRow", @"fourthRow"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -81,7 +80,10 @@ typedef enum {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self performSegueWithIdentifier:self.segueArray[indexPath.row] sender:self];
+    if (indexPath.row == MENU_LOGOUT)
+        [self dismissViewControllerAnimated:YES completion:nil];
+    else
+        [self performSegueWithIdentifier:self.segueArray[indexPath.row] sender:self];
 }
 
 /*
