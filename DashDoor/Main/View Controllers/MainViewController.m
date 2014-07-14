@@ -85,6 +85,10 @@
     return cell;
 }
 
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 /*
  * refreshRestaurantList - We make the call to the backend to obtain the restaurants
  */

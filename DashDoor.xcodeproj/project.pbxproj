@@ -38,6 +38,7 @@
 		0E683B53196E810600255BC5 /* dashdoor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E683B52196E810600255BC5 /* dashdoor.png */; };
 		0E7CC1E91970CE3300E7F42D /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7CC1E81970CE3300E7F42D /* Constants.m */; };
 		0E7DCABB1970CD3800CB7774 /* RESTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7DCABA1970CD3800CB7774 /* RESTHelper.m */; };
+		0E80796C1973A91700C39D51 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80796B1973A91700C39D51 /* ChatViewController.m */; };
 		0EBC979919710E6B00CBD970 /* FICHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC979819710E6B00CBD970 /* FICHelper.m */; };
 		0EE990EC196E857400B30840 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE990EB196E857400B30840 /* SignInViewController.m */; };
 		FBADEA59B495440B85D31401 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5368707DD2BD4B778CB3551E /* libPods.a */; };
@@ -99,6 +100,8 @@
 		0E7CC1E81970CE3300E7F42D /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Helpers/Constants.m; sourceTree = "<group>"; };
 		0E7DCAB91970CD3800CB7774 /* RESTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RESTHelper.h; path = Helpers/RESTHelper.h; sourceTree = "<group>"; };
 		0E7DCABA1970CD3800CB7774 /* RESTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RESTHelper.m; path = Helpers/RESTHelper.m; sourceTree = "<group>"; };
+		0E80796A1973A91700C39D51 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = "Main/View Controllers/ChatViewController.h"; sourceTree = "<group>"; };
+		0E80796B1973A91700C39D51 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = "Main/View Controllers/ChatViewController.m"; sourceTree = "<group>"; };
 		0EBC979719710E6B00CBD970 /* FICHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FICHelper.h; path = Helpers/FICHelper.h; sourceTree = "<group>"; };
 		0EBC979819710E6B00CBD970 /* FICHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FICHelper.m; path = Helpers/FICHelper.m; sourceTree = "<group>"; };
 		0EE990EA196E857400B30840 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = "Main/View Controllers/SignInViewController.h"; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				0E29C2511971E83E00A0E935 /* DriverViewController.m */,
 				0E29C2531971EAB400A0E935 /* SupportViewController.h */,
 				0E29C2541971EAB400A0E935 /* SupportViewController.m */,
+				0E80796A1973A91700C39D51 /* ChatViewController.h */,
+				0E80796B1973A91700C39D51 /* ChatViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -436,6 +441,7 @@
 				0E683B2C196E6ADA00255BC5 /* DashDoor.xcdatamodeld in Sources */,
 				0E14E0D31971D2D6007DA0E3 /* MainSliderViewController.m in Sources */,
 				0E0983291970E61800796E34 /* MenuTableViewController.m in Sources */,
+				0E80796C1973A91700C39D51 /* ChatViewController.m in Sources */,
 				0E02035D19711317000C7373 /* LocationHandler.m in Sources */,
 				0E011009196E84750038D2DC /* HomeViewController.m in Sources */,
 			);

@@ -1,5 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Firebase"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/AMSlideMenu" "${PODS_ROOT}/Headers/FastImageCache" "${PODS_ROOT}/Headers/SVProgressHUD"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/AFNetworking" -isystem "${PODS_ROOT}/Headers/AMSlideMenu" -isystem "${PODS_ROOT}/Headers/FastImageCache" -isystem "${PODS_ROOT}/Headers/SVProgressHUD"
-OTHER_LDFLAGS = -ObjC -framework CoreGraphics -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/AMSlideMenu" "${PODS_ROOT}/Headers/FastImageCache" "${PODS_ROOT}/Headers/Firebase" "${PODS_ROOT}/Headers/SVProgressHUD"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/AFNetworking" -isystem "${PODS_ROOT}/Headers/AMSlideMenu" -isystem "${PODS_ROOT}/Headers/FastImageCache" -isystem "${PODS_ROOT}/Headers/Firebase" -isystem "${PODS_ROOT}/Headers/SVProgressHUD"
+OTHER_LDFLAGS = -ObjC -licucore -framework CFNetwork -framework CoreGraphics -framework Firebase -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration
 PODS_ROOT = ${SRCROOT}/Pods

@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_FastImageCache 3
 #define COCOAPODS_VERSION_PATCH_FastImageCache 0
 
+// Firebase
+#define COCOAPODS_POD_AVAILABLE_Firebase
+#define COCOAPODS_VERSION_MAJOR_Firebase 1
+#define COCOAPODS_VERSION_MINOR_Firebase 0
+#define COCOAPODS_VERSION_PATCH_Firebase 9
+
 // SVProgressHUD
 #define COCOAPODS_POD_AVAILABLE_SVProgressHUD
 #define COCOAPODS_VERSION_MAJOR_SVProgressHUD 1
